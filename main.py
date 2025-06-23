@@ -1,13 +1,6 @@
-from flask import Flask
 import time
+print("🚀 EXCALIBUR LAUNCHING...")
 
-app = Flask(__name__)
-
-@app.route('/')
-def index():
-    return 'EXCALIBUR is alive and recursive.'
-
-if __name__ == '__main__':
-    while True:
-        print("[Heartbeat] Vault stable. ETH logic cycling.")
-        time.sleep(900)  # 15 minutes
+while True:
+    print("[Heartbeat] Vault stable. ETH logic cycling.")
+    time.sleep(900)  # 15 minutes — reduce to 15 seconds for testing
